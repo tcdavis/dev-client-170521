@@ -1,7 +1,11 @@
 {
   "expo": {
     "name": "managed-demo",
+    "plugins": [
+      "expo-dev-client"
+    ],
     "slug": "managed-demo",
+    "scheme": "managed-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,13 +21,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thetc.managed-demo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.thetc.manageddemo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
