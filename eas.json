@@ -2,12 +2,23 @@
   "builds": {
     "android": {
       "release": {
-        "workflow": "generic"
+        "workflow": "generic",
+        "gradleCommand": ":app:bundleRelease"
+      },
+      "development": {
+        "workflow": "generic",
+        "distribution": "internal",
+        "gradleCommand": ":app:assembleDebug"
       }
     },
     "ios": {
       "release": {
         "workflow": "generic"
+      },
+      "development": {
+        "workflow": "generic",
+        "distribution": "internal",
+        "schemeBuildConfiguration": "Debug"
       }
     }
   }
